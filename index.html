@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Select coffee</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/slick.css">
+  <link rel="stylesheet" type="text/css" href="css/coffee-subscript-test.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="blondie-icn-iphone.png">
+  <meta name="apple-mobile-web-app-title" content="Order coffee">
+</head>
+<body>
+  <div id=container>
+
+
+<!-- section 1 -->
+
+    <div id="section1">
+      <section>
+        <div class="back none"><a href="">← Back</a></div>
+        <div class="title">
+          <h1 class="safari_title">Many happy returns, Mom.</h1>
+        </div>
+        <div class="start"><a class="btn-next" href="#section2">Pick your coffee →</a></div>
+          <img id="blob" src="img/blob.png">
+          <img id="foliage" src="img/foliage.png">
+      </section>
+    </div>
+
+
+<!-- section 2 -->
+
+    <div id="section2">
+      <section>
+        <div class="back"><a class="btn-back" href="#section1">← Back</a></div>
+        <div class="title">
+          <h1 class="safari_title">Coffee selection</h1>
+          <p class="body">Pick a coffee from the choices below. We’ll roast it and send to you.</p>
+        </div>
+      </section>
+
+
+      <!-- selected states -->
+
+      <section>
+        <div id="selectBurundi" class="card none">
+          <h2 class="safari_h2">Burundi</h2>
+          <p class="desc">Decaffeinated</p>
+          <p class="body">Cinnamon-spiced Mexican dark chocolate, along with accents of banana chips, dried currants, and Ovaltine powder.</p>
+          <div class="confirm"><a class="btn-next"  data-type="Burundi" href="#section3">Tap to confirm</a></div>
+
+          <div class="cancel"><a class="btn-cancel" href="#section2">Cancel</a></div>
+
+        </div>
+
+        <div id="selectCongo" class="card none">
+          <h2 class="safari_h2">Congo</h2>
+          <p class="desc">Decaffeinated</p>
+          <p class="body">Blackstrap molasses, peet, sesame oil, toasted barley tea, and pungent tropical accents.</p>
+
+          <div class="confirm"><a class="btn-next" data-type="Congo" href="#section3">Tap to confirm</a></div>
+
+          <div class="cancel"><a class="btn-cancel" href="#section2">Cancel</a></div>
+
+        </div>
+
+        <div id="selectRwanda" class="card none">
+          <h2 class="safari_h2">Rwanda</h2>
+          <p class="desc">Decaffeinated</p>
+          <p class="body">Layered cacao bittersweetness, date sugar, barley malt, and cinnamon spice.</p>
+
+          <div class="confirm"><a class="btn-next"  data-type="Rwanda" href="#section3">Tap to confirm</a></div>
+
+          <div class="cancel"><a class="btn-cancel" href="#section2">Cancel</a></div>
+
+        </div>
+
+      </section>
+
+
+
+      <!-- card slider -->
+
+      <section class="regular slider">
+        <div class="card">
+          <h2 class="safari_h2">Burundi</h2>
+          <p class="desc">Decaffeinated</p>
+          <p class="body">Cinnamon-spiced Mexican dark chocolate, along with accents of banana chips, dried currants, and Ovaltine powder.</p>
+          <div class="select"><a id="btn-Burundi" href="#selectBurundi">Tap to select</a></div>
+
+        </div>
+        <div class="card">
+          <h2 class="safari_h2">Congo</h2>
+          <p class="desc">Decaffeinated</p>
+          <p class="body">Blackstrap molasses, peet, sesame oil, toasted barley tea, and pungent tropical accents.</p>
+          <div class="select"><a id="btn-Congo" href="#selectCongo">Tap to select</a></div>
+        </div>
+        <div class="card">
+          <h2 class="safari_h2">Rwanda</h2>
+          <p class="desc">Decaffeinated</p>
+          <p class="body">Layered cacao bittersweetness, date sugar, barley malt, and cinnamon spice.</p>
+          <div class="select"><a id="btn-Rwanda" href="#selectRwanda">Tap to select</a></div>
+        </div>
+      </section>
+    </div>
+
+
+<!-- section 3 -->
+
+    <div id="section3">
+      <section>
+        <div class="back"><a class="btn-back" href="#section2">← Back</a></div>
+        <div class="title">
+          <h1 class="safari_title">Sending order</h1>
+          <p class="body">We’ll get cracking on getting those birthday beans roasted and sent to you. When you're ready for another batch, come back here and order away! </p>
+        </div>
+        <img id="bag" src="img/bag.png">
+        <img id="blob2" class="" src="img/blob2.png">
+        <img id="brush" class="" src="img/brush.png">
+      </section>
+    </div>
+
+  </div>
+
+
+  <script src="https://code.jquery.com/jquery-2.2.0.min.js" type="text/javascript"></script>
+  <script src="js/jquery-ui.min.js" type="text/javascript" charset="utf-8"></script>
+  <script src="js/scroll.js" type="text/javascript" charset="utf-8"></script>
+  <script src="js/slick.js" type="text/javascript" charset="utf-8"></script>
+
+  <script type="text/javascript">
+    $(document).on('ready', function() {
+      $(".slider").slick({
+
+  // normal options...
+  infinite: false,
+  dots:false,
+  slidesToScroll:1,
+
+
+  // the magic
+  responsive: [{
+
+      breakpoint: 1024,
+      settings: {
+        slidesToShow: 3,
+      }
+
+    }, {
+
+      breakpoint: 600,
+      settings: {
+        slidesToShow: 1.22,
+
+      }
+
+    }, {
+
+      breakpoint: 300,
+      settings: "unslick" // destroys slick
+
+    }]
+});
+    });
+  </script>
+
+
+
+</body>
+</html>

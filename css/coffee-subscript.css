@@ -1,0 +1,161 @@
+*:focus{
+  outline:none;
+}
+html, body, h1, h2, h3, p, small {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+body{
+  background:#00d1f0;
+  width:100vw;
+  overflow: hidden;
+}
+
+#container{
+  width:1242px; /* 414*3 */
+}
+
+#section1, #section2, #section3{
+  float:left;
+  width:100vw;
+}
+
+.start{
+  width:100%;
+  text-align:right;
+  position: absolute;
+  bottom: 16vh;
+  right: 30px;
+}
+
+.back{
+  width:100%;
+  text-align: left;
+  margin:30px 0 0 30px;
+}
+
+.none{
+  visibility: hidden;
+}
+
+#blob{
+  width:342px;
+  position:absolute;
+  right: -12vw;
+  bottom: 11.3vh;
+  z-index: -1;
+}
+
+#foliage{
+  width:568px;
+  position:absolute;
+  right: -70vw;
+  bottom: 44vh;
+  z-index:-2;
+}
+
+.slider {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.slick-slide {
+  margin-right: 30px;
+}
+
+.slick-slide img {
+  width: 100%;
+}
+
+.card{
+  background:white;
+  min-height: 320px;
+  padding:30px;
+  box-shadow: 0px 8px 10px 0px rgba(0, 0, 0, 0.02),0px 20px 80px 0px rgba(0, 0, 0, 0.1);
+}
+
+
+.title{
+  margin:5px 30px 0 30px;
+  color:white;
+}
+
+
+/*animation*/
+
+
+
+
+
+/* typography */
+
+h1, h2, h3, h4, h5, h6{
+  font-family:'Quarto-Black';
+}
+
+h1{
+  font-size: 72px;
+  line-height: 68px;
+}
+
+.start a, .back a{
+  text-decoration: none;
+  color:#ffffff;
+  font: 20px 'Fira Mono';
+}
+
+h2{
+  font-size:52px;
+}
+
+.card h2{
+  margin:-5px 0 0 0;
+}
+
+.card h2, .card p {
+  color:#171717;
+}
+
+.desc{
+  font: 12px 'Fira Mono';
+}
+
+.card .desc{
+  color: #818181 !important;
+  margin: 16px 0 16px 1px;
+}
+
+.body{
+  font: 15px/23px 'Fira Sans';
+  font-weight: 200;
+}
+
+.title .body{
+  color:#171717;
+  margin:25px 0;
+}
+
+.card .body{
+  min-height:96px;
+}
+
+.select{
+  width:100%;
+  text-align: center;
+  position: relative;
+  bottom: -44px;
+}
+
+.select a{
+  text-decoration: none;
+  color:#ff7645;
+  font: 14px 'Fira Mono';
+
+}

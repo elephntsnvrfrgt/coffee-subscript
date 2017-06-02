@@ -1,0 +1,333 @@
+*:focus{
+  outline:none;
+}
+html, body, h1, h2, h3, p, small {
+  margin: 0;
+  padding: 0;
+}
+
+* {
+  box-sizing: border-box;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+
+
+body{
+  background:#00d1f0;
+  width:100vw;
+  overflow: hidden;
+}
+
+#container{
+  width:1242px; /* 414*3 */
+}
+
+#section1, #section2, #section3{
+  float:left;
+  width:100vw;
+  height:628px;
+}
+
+#section2, #section3{
+  overflow:hidden !important;
+}
+
+#section3{
+  background: white;
+}
+
+#section3 .title{
+  color:#171717;
+}
+
+#section3 .body{
+  width:80vw;
+}
+
+.start{
+  width:100%;
+  text-align:right;
+  position: absolute;
+  top: 70vh;
+  right: 30px;
+}
+
+.back{
+  width:100%;
+  text-align: left;
+  margin:30px 0 0 30px;
+}
+
+
+/*toggle visibility*/
+
+.none{
+  opacity:0;
+  z-index: -100 !important;
+  -webkit-transition: opacity .3s;
+    transition: opacity .3s;
+}
+
+.visible{
+  opacity:1;
+  -webkit-transition: opacity .3s;
+    transition: opacity .3s;
+}
+
+
+/*images*/
+
+#blob{
+  width:342px;
+  position:absolute;
+  right: -13vw;
+  top: 35vh;
+  z-index: -1;
+}
+
+#foliage{
+  width:568px;
+  position:absolute;
+  right: -70vw;
+  bottom: 44vh;
+  z-index:-2;
+}
+
+/*#bag{
+  width:170px;
+  position:absolute;
+  right:-13vw;
+  top:5vh;
+}*/
+
+#bag{
+  width: 265px;
+  position: absolute;
+  /*top:18vh;*/
+  bottom:0;
+  left:213.5vw;
+  z-index:2;
+}
+
+#blob2{
+  position: absolute;
+  width: 353px;
+  right:-153vw;
+  top:50vh;
+  z-index:1;
+}
+
+#brush{
+  position: absolute;
+  width: 351px;
+  right:-132vw;
+  bottom:0;
+  /*top:42vh;*/
+  z-index:0;
+}
+
+#brush, #blob2{
+display: none;
+}
+
+
+.slider {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.slick-slide {
+  margin: 0 30px 0 0;
+}
+
+.slick-slide img {
+  width: 100%;
+}
+
+.card{
+  background:white;
+  min-height: 280px;
+  padding:30px;
+  box-shadow: 0px 8px 10px 0px rgba(0, 0, 0, 0.02),0px 20px 80px 0px rgba(0, 0, 0, 0.1);
+}
+
+.number{
+  position:relative;
+  top:11.5vh;
+}
+
+.title{
+  margin:20px 30px 0 30px;
+  color:white;
+  position:relative;
+}
+
+
+/*animation*/
+
+
+
+
+
+/* typography */
+
+@font-face {
+	font-family: 'Quarto-Black';
+	src: url(../fonts/Quarto-Black.eot);
+	src: url(../fonts/Quarto-Black.eot?#iefix) format('embedded-opentype'),
+		url(../fonts/Quarto-Black.woff) format('woff'),
+		url(../fonts/../fonts/Quarto-Black.ttf) format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Fira Sans ExtraLight';
+	src: url(../fonts/FiraSans-ExtraLight.eot);
+	src: url(../fonts/FiraSans-ExtraLight.eot?#iefix) format('embedded-opentype'),
+		url(../fonts/FiraSans-ExtraLight.woff) format('woff'),
+		url(../fonts/../fonts/FiraSans-ExtraLight.ttf) format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Fira Mono';
+	src: url(../fonts/FiraMono-Regular.eot);
+	src: url(../fonts/FiraMono-Regular.eot?#iefix) format('embedded-opentype'),
+		url(../fonts/FiraMono-Regular.woff) format('woff'),
+		url(../fonts/../fonts/FiraMono-Regular.ttf) format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+h1, h2, h3, h4, h5, h6{
+  font-family:'Quarto-Black';
+}
+
+h1{
+  font-size: 76px;
+  line-height: 64px;
+}
+
+.start a, .back a{
+  text-decoration: none;
+  color:#ffffff;
+  font: 18px 'Fira Mono';
+}
+
+h2{
+  font-size:44px;
+}
+
+.card h2{
+  margin:-5px 0 0 0;
+}
+
+.card h2, .card p {
+  color:#171717;
+}
+
+.desc{
+  font: 12px 'Fira Mono';
+}
+
+.card .desc{
+  color: #818181 !important;
+  margin: 16px 0 16px 1px;
+}
+
+.body{
+  font: 14px/22px 'Fira Sans ExtraLight';
+}
+
+.title .body{
+  color:#171717;
+  margin:25px 0;
+}
+
+.card .body{
+  min-height:92px;
+}
+
+.select, .confirm, .cancel{
+  width:50%;
+  text-align: right;
+  position: relative;
+  bottom: -20px;
+}
+
+.select{
+  float:right;
+  width:100%;
+}
+
+.select a, .confirm a, .cancel a{
+  text-decoration: none;
+  color:#ff7645;
+  font: 14px 'Fira Mono';
+}
+
+.confirm, .cancel{
+  text-align: left;
+}
+
+/*.cancel{
+  bottom:-80px;
+}*/
+
+.cancel a{
+  color:#c1c1c1;
+}
+
+/*card opacity change for current card*/
+
+/*.slick-slide {
+  opacity: .9;
+  -webkit-transition: opacity .3s;
+    /*transition: opacity .3s;
+}
+
+.slick-current{
+  opacity:1;
+  -webkit-transition: opacity .3s;
+    transition: opacity .3s;
+}*/
+
+
+/*confirm coffee selection*/
+
+#selectBurundi, #selectCongo, #selectRwanda{
+  position:absolute;
+  z-index: 5;
+  width:100vw;
+}
+
+.confirm{
+  text-align: right;
+  float:right;
+  width:40vw;
+}
+
+/*#selectBurundi .body, .confirm{
+  width:60vw;
+}*/
+
+
+
+/* Safari 7.1+ */
+
+_::-webkit-full-page-media, _:future, :root .safari_title {
+
+  letter-spacing:-.04em;
+
+}
+
+_::-webkit-full-page-media, _:future, :root .safari_h2 {
+
+  letter-spacing:-.03em;
+
+}
